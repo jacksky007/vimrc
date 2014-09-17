@@ -1,4 +1,3 @@
-colorscheme molokai
 
 syntax enable
 
@@ -36,6 +35,7 @@ set backspace=indent,eol,start
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
 if has("win32")
+  colorscheme molokai
   set fileencoding=chinese
 else
   set fileencoding=utf-8
