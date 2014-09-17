@@ -7,7 +7,7 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 
-set linespace=4
+set linespace=6
 set number
 set showcmd
 set cursorline
@@ -46,7 +46,7 @@ language messages zh_CN.utf-8
 if has("gui_running")
   colorscheme molokai
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 12
+    set guifont=DejaVu\ Sans\ Mono\ 16
   elseif has("gui_macvim")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
