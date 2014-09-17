@@ -35,7 +35,6 @@ set backspace=indent,eol,start
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
 if has("win32")
-  colorscheme molokai
   set fileencoding=chinese
 else
   set fileencoding=utf-8
@@ -45,6 +44,7 @@ source $VIMRUNTIME/menu.vim
 language messages zh_CN.utf-8
 
 if has("gui_running")
+  colorscheme molokai
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
