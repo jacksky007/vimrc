@@ -3,6 +3,9 @@ syntax enable
 
 set fileformat=unix
 
+" indent width while pressing '>>' and '<<'
+set shiftwidth =2
+
 set tabstop=2
 set softtabstop=2
 set expandtab
@@ -12,7 +15,7 @@ set number
 set showcmd
 set cursorline
 
-"filetype indent on
+filetype indent on
 
 set wildmenu
 set lazyredraw
@@ -30,7 +33,10 @@ set list
 set listchars=tab:T>
 
 set nocompatible
-set backspace=indent,eol,start
+set backspace=indent,eol,start:
+
+" reduce cursor blinking frequency
+set guicursor+=a:blinkwait500-blinkon1000-blinkoff1200
 
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
