@@ -33,7 +33,7 @@ set list
 set listchars=tab:T>
 
 set nocompatible
-set backspace=indent,eol,start:
+set backspace=indent,eol,start
 
 " reduce cursor blinking frequency
 set guicursor+=a:blinkwait500-blinkon1000-blinkoff1200
@@ -61,5 +61,6 @@ if has("gui_running")
   endif
 endif
 
+" https://github.com/tpope/vim-pathogen/
 call pathogen#infect()
 
