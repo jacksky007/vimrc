@@ -50,7 +50,7 @@ source $VIMRUNTIME/menu.vim
 language messages zh_CN.utf-8
 
 if has("gui_running")
-  " https://github.com/tomasr/molokai/blob/master/colors/molokai.vim
+  " https://github.com/tomasr/molokai/
   colorscheme molokai
   if has("gui_gtk2")
     set guifont=DejaVu\ Sans\ Mono\ 16
