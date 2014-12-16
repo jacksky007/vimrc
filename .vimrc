@@ -58,6 +58,12 @@ if has("gui_running")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
     set guifont=Consolas:h16:cANSI
+    
+    " I try Monaco occasionally, and it seems better than Consolas for me.
+    " A little difference is that we need reduce linespace for it.
+    " https://github.com/todylu/monaco.ttf
+    set guifont=Monaco:h17:cANSI
+    set linespace=3
   endif
 endif
 
