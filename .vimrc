@@ -67,6 +67,14 @@ if has("gui_running")
   endif
 endif
 
+if has('multi_byte')
+  if empty(&termencoding)
+    let &termencoding = &encoding
+  endif
+  let &encoding     = 'utf-8'
+  let &fileencoding = 'utf-8'
+endif
+
 " https://github.com/tpope/vim-pathogen/
 call pathogen#infect()
 
